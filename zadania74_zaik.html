@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<body>
+<table>
+<table border="1">
+   <tr>
+      <td><b><center>Kolor tła</center></b></td> 
+	  <td>selektor {background-color: kolor;}<br>
+	  <br>
+	  <b>Przykład:</b> p{background-color: blue;}</td> 
+   </tr>
+   <tr>
+      <td><b><center>Tło Obrazkowe</center></b></td> 
+	  <td>Jednozadaniowy opis:<br>
+selektor {background-image: url(adres);}<br>
+<br>
+<b>Przykład:</b> background-image: url("file:///c:/CSS/_rozwiazanie/tla_marginesy/grafiki/tlo_1.jpg");</td> 
+   </tr>
+   <tr>
+      <td><b><center>Powtarzanie tła</center></b></td> 
+	  <td>selektor {background-repeat: powtarzanie;}<br>
+Wyraz selektor ma zastosowanie do wszystkich elementów.<br>
+<br>
+<b>Przykład:</b> p{background-repeat: repeat;}<br>
+<br>
+<b>powtarzanie:</b><br>
+"repeat" - jednocześnie w pionie i poziomie - domyślnie<br>
+"repeat-x" - w poziomie<br>
+"repeat-y" - w pionie<br>
+"no-repeat" - pojedynczy obrazek - bez powtarzania - w górnym-lewym rogu</td> 
+   </tr>
+   <tr>
+      <td><b><center>Pozycja tła</center></b></td> 
+	  <td> Składnia reguły:<br>
+selektor {background-position: pozycja;}<br>
+<br>
+<b>Przykład:</b> p{background-position: center;}<br>
+<br>
+<b>Parametry:</b><br>
+"center" - obrazek na środku (w centrum)<br>
+"left" - obrazek po lewej<br>
+"right" - obrazek po prawej<br>
+"top" - obrazek na górze<br>
+"bottom" - obrazek na dole
+jednostki miary - odległość od lewej krawędzi<br>
+dwie wartości (oddzielone spacją):
+"left top" - lewy-górny róg<br>
+"left bottom" - lewy-dolny róg<br>
+"right top" - prawy-górny róg<br>
+"right bottom" - prawy-dolny róg<br>
+dwie jednostki miary - pierwsza z nich oznacza odległość<br>
+ od lewej krawędzi, a druga - od górnej</td> 
+   </tr>
+   <tr>
+      <td><b><center>Zaczepienie tła</center></b></td> 
+	  <td>Składnia reguły:<br>
+selektor {background-attachment: zaczepienie;}<br>
+<br>
+<b>Przykład:</b> p{background-attachment: scroll;}<br>
+<br>
+<b>zaczepienie:</b><br>
+"scroll" - przewijanie tła (domyślnie)<br>
+"fixed" - tło nieruchome<br>
+</td> 
+   </tr>
+    <tr>
+      <td><b><center>Łączenie atrybutów tła</center></b></td> 
+	  <td>Składnia reguły:<br>
+selektor {background: wartości atrybutów;}<br>
+<br>
+<b>Przykład:</b> p{background: blue;}<br>
+<br>
+wartości atrybutów: <br>
+-kolor tła <br>
+-tło obrazkowe <br>
+-powtarzanie tła <br>
+-zaczepienie tła <br>
+-pozycja tła<br>
+</td> 
+   </tr>
+    <tr>
+      <td><b><center>Gradient liniowy</center></b></td> 
+	  <td>
+	  selektor { background: linear-gradient(kierunek, kolor1 odległość1, kolor2 odległość2...) }<br>
+Selektorem może być praktycznie dowolny znacznik: p - akapit, h1 – tytuł td - komórka tabeli<br>
+<br>
+<b>Przykład:</b>p { background: linear-gradient(to bottom, black 0%, white 100%)}<br>
+<br>
+<b>słowa kluczowe</b><br>
+to top - przejście kolorów nastąpi pionowo z dołu do góry (odpowiednik 0deg)<br>
+to right top - ukośnie z lewego-dolnego do prawego-górnego narożnika<br>
+to right - poziomo z lewej do prawej strony (odpowiednik 90deg)<br>
+to right bottom - ukośnie z lewego-górnego do prawego-dolnego narożnika<br>
+to bottom - pionowo z górny do dołu (odpowiednik 180deg - domyślnie)<br>
+to left bottom - ukośnie z prawego-górnego do lewego-dolnego narożnika<br>
+to left - poziomo z prawej do lewej strony (odpowiednik 270deg)<br>
+to left top - ukośnie z prawego-dolnego do lewego-górnego narożnika<br>
+kąt - liczony zgodnie z ruchem wskazówek zegara<br>
+z wartością:<br>
+0deg skierowaną pionową w górę,<br>
+180deg - pionowo w dół<br>
+</td> 
+   </tr>
+    <tr>
+      <td><b><center>Gradient promienisty</center></b></td> 
+	  <td>selektor { background: radial-gradient(kształt rozmiar at pozycja, kolor1 odległość1, kolor2 odległość2...) }<br>
+Selektorem może być praktycznie dowolny znacznik: p - akapit, h1 – tytuł td - komórka tabeli<br>
+<br>
+<b>Przykład:</b>repeating-radial-gradient(white 33%, black 66%)
+<br>
+<b>słowa kluczowe:</b><br>
+<br>
+closest-side - gradient będzie się rozchodził do najbliższej krawędzi elementu<br>
+farthest-side - do najdalszej krawędzi<br>
+closest-corner - do najbliższego narożnika<br>
+farthest-corner - do najdalszego narożnika (domyślnie)<br>
+promień - podany za pomocą jednostek długości lub procentowo<br>
+poziom pion - poziomy i pionowy promień elipsy, określony za pomocą jednostek długości lub procentowo<br>
+</td> 
+   </tr>
+  
+</table>
+
+</body>
+</html>
